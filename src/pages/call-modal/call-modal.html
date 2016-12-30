@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar>
+    <img src="assets/img/icon_fanhui.png" (click)="close()" class="img-header" />
+    <ion-title>通话</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="setting()">
+        <!--<ion-icon src ="assets/img/icon_shezhi.png"></ion-icon>-->
+        <img src ="assets/img/icon_shezhi.png" class="img-header"/>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <div class="line"></div>
+  <ion-toolbar class="call-toolbar">
+
+    <span class="time">可用通话时长：</span>
+    <span class="time-value">25分钟12秒</span>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list id="records_list">
+    <ion-item (click)="callContact(item)">
+      <img src="/assets/img/icon_dianhua.png" item-left alt="*" class="call-modal-img" />
+      <h2 class="call-phone-number">{{item.phoneNumber}}</h2>
+      <p class="call-name">{{item.displayName}}</p>
+      <div item-right class="call-time">
+        <p>{{item.callDate}}</p>
+        <!--<ion-note >{{item.callDate}}</ion-note>-->
+        <p>{{item.callTime}}</p>
+
+      </div>
+
+    </ion-item>
+    <ion-item (click)="callContact(item)">
+      <img src="/assets/img/icon_dianhua.png" item-left alt="*" class="call-modal-img" />
+      <h2 class="call-phone-number">{{item.phoneNumber}}</h2>
+      <p class="call-name">{{item.displayName}}</p>
+      <div item-right class="call-time">
+        <p>{{item.callDate}}</p>
+        <!--<ion-note >{{item.callDate}}</ion-note>-->
+        <p>{{item.callTime}}</p>
+
+      </div>
+
+    </ion-item>
+  </ion-list>
+  <!--
+		<ion-list id="records_list" >
+			<ion-item  ng-repeat="item in allRecords" class="item-icon-right" ng-click="callContact(item)">
+				<span class="contact_name">{{item.displayName}}</span>&nbsp;&nbsp;
+				<span class="contact_time">{{item.phoneNumber}}</span>&nbsp;&nbsp;
+				<span class="contact_time">{{item.callTime}}</span> 
+				
+			</ion-item>
+		</ion-list>-->
+</ion-content>

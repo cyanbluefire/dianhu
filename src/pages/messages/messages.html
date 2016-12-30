@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      我的消息
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="allMessages">
+      <ion-segment-button value="unreadMsg">
+        未读消息
+      </ion-segment-button>
+      <ion-segment-button value="readMsg">
+        已读消息
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="allMessages">
+    <ion-list *ngSwitchCase="'unreadMsg'">
+      <!--<ion-list-header>sss</ion-list-header>-->
+      <ion-item>
+        <!--<img item-left class="badge-unread" />-->
+        <!--<ion-img item-left class="badge-unread"></ion-img>-->
+        <img src="/assets/img/icon_tishi" item-left class="badge-unread" alt="*"/>
+        
+
+        <h2>积分赠送</h2>
+      <p>邀请用户123***13241注册</p>
+      <ion-note item-right>3:43 pm</ion-note>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'readMsg'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
