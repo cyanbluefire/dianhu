@@ -1,11 +1,42 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      通话
+
     </ion-title>
   </ion-navbar>
+  <div class="line"></div>
+  <ion-toolbar class="call-toolbar">
+
+    <span class="time">可用通话时长：</span>
+    <span class="time-value">25分钟12秒</span>
+
+  </ion-toolbar>
 </ion-header>
+<ion-content>
+  <ion-list id="records_list">
+    <ion-item (click)="callContact(item)">
+      <img src="/assets/img/icon_dianhua.png" item-left alt="*" class="call-modal-img" />
+      <h2 class="call-phone-number">{{item.phoneNumber}}</h2>
+      <p class="call-name">{{item.displayName}}</p>
+      <div item-right class="call-time">
+        <p>{{item.callDate}}</p>
+        <!--<ion-note >{{item.callDate}}</ion-note>-->
+        <p>{{item.callTime}}</p>
 
-<ion-content padding>
+      </div>
 
+    </ion-item>
+    <ion-item (click)="callContact(item)">
+      <img src="/assets/img/icon_dianhua.png" item-left alt="*" class="call-modal-img" />
+      <h2 class="call-phone-number">{{item.phoneNumber}}</h2>
+      <p class="call-name">{{item.displayName}}</p>
+      <div item-right class="call-time">
+        <p>{{item.callDate}}</p>
+        <!--<ion-note >{{item.callDate}}</ion-note>-->
+        <p>{{item.callTime}}</p>
+
+      </div>
+
+    </ion-item>
+  </ion-list>
 </ion-content>

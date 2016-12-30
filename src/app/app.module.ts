@@ -19,6 +19,8 @@ import {JSONP_PROVIDERS} from 'angular2/http';
 import {bootstrap} from 'angular2/platform/browser';
 import {ConnectYZX} from '../providers/connect-yzx';
 import {CallModalPage} from '../pages/call-modal/call-modal';
+import {MePage} from '../pages/me/me';
+
 
 @NgModule({ 
   declarations: [
@@ -35,7 +37,8 @@ import {CallModalPage} from '../pages/call-modal/call-modal';
     RegisterPage,
     MyCardComponent,
     MessagesPage,
-    CallModalPage
+    CallModalPage,
+    MePage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -55,7 +58,8 @@ import {CallModalPage} from '../pages/call-modal/call-modal';
     LoginPage,
     RegisterPage,
     MessagesPage,
-    CallModalPage
+    CallModalPage,
+    MePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},HttpGet,ConnectYZX]
 })

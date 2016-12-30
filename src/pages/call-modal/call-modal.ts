@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams,ViewController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, ModalController, ViewController, Tabs } from 'ionic-angular';
+
 import { TabsPage } from '../tabs/tabs';
+import { ContactPage } from '../contact/contact';
+import { CallPage } from '../call/call';
+
 
 @Component({
   selector: 'page-call-modal',
@@ -8,21 +12,16 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class CallModalPage {
 
-  item = {
-    phoneNumber:12345678910,
-    displayName:'哈哈',
-    callDate:'12-30',
-    callTime:'22:00'
-  }
-  constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController) {}
+  @ViewChild('callTabs') tabRef: Tabs;
+  callRoot: any = CallPage;
+  contactRoot: any = ContactPage;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CallModalPage');
   }
-  close(){
-    this.viewCtrl.dismiss();
-    // this.navCtrl.push(TabsPage);
-    // this.navCtrl.parent.select(0);
+  calling() {
+    console.log("calling");
   }
 
 }

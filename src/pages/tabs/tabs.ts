@@ -3,12 +3,12 @@ import { NavController, NavParams,ModalController,ViewController,Tabs } from 'io
 
 import { HomePage } from '../home/home';
 import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
 import { FindPage } from '../find/find';
-import { CallPage } from '../call/call';
 import { LoginPage } from '../login/login';
 import { MessagesPage } from '../messages/messages';
 import { CallModalPage } from '../call-modal/call-modal';
+import { MePage } from '../me/me';
+
 
 @Component({
   templateUrl: 'tabs.html'
@@ -19,9 +19,8 @@ export class TabsPage {
   // should be each tab's root Page
   tab1Root: any = HomePage;
   tab2Root: any = AboutPage;
-  tab3Root: any = ContactPage;
+  tab3Root: any = MePage;
   tab4Root: any = FindPage;
-  tab5Root: any = CallPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController,public viewCtrl: ViewController) {
 
