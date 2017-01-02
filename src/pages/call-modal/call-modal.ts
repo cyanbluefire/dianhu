@@ -15,6 +15,7 @@ export class CallModalPage {
     callDate:'12-30',
     callTime:'22:00'
   }
+
   constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController,public popoverCtrl: PopoverController) {}
 
   ionViewDidLoad() {
@@ -25,11 +26,13 @@ export class CallModalPage {
     // this.navCtrl.push(TabsPage);
     // this.navCtrl.parent.select(0);
   }
+
   presentPopover(myEvent) {
     let popover = this.popoverCtrl.create(KeyboardPage);
     popover.present({
       ev: myEvent
     });
   }
+
 
 }

@@ -31,6 +31,7 @@
     "typescript": "2.0.9"
   },
   "cordovaPlugins": [
+
     "cordova-plugin-device",
     "cordova-plugin-console",
     "cordova-plugin-whitelist",

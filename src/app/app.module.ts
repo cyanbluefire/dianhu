@@ -19,7 +19,10 @@ import {JSONP_PROVIDERS} from 'angular2/http';
 import {bootstrap} from 'angular2/platform/browser';
 import {ConnectYZX} from '../providers/connect-yzx';
 import {CallModalPage} from '../pages/call-modal/call-modal';
+<<<<<<< HEAD
 import { KeyboardPage } from '../pages/keyboard/keyboard';
+=======
+>>>>>>> f37771e69829bff97604028c9e56971e03f570c0
 
 @NgModule({ 
   declarations: [
