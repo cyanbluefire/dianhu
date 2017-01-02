@@ -1,0 +1,58 @@
+page-register {
+
+}
+.slogan{
+  text-align: center;
+}
+
+.hi{
+  font-size: 19px;
+  color: #fb6d07;
+  margin-top: 74px;
+}
+.card{
+  border: 1.5px solid #c9c9c9;
+  border-radius: 10px;
+   margin: 0px 33px;
+    width: calc(100% - 66px);
+}
+.login{
+  padding:0px 43px;
+}
+.login button{
+  // width: 289px;
+  margin-top: 51px;
+  color: #ffffff;
+  background-color: #fb6d07;
+  border-radius: 10px;
+  font-size: 21px;
+}
+hr.hr-login{
+  height: 1.5px;
+  // margin:0 8px 0 8px;
+  margin:0 8px;
+}
+#lost-psw{
+  padding:0 15px 15px 28px;
+  color:#858484;
+}
+#sign-up{
+  position: absolute;
+  right:0px;
+  // margin-right: 15px;
+  padding:0 43px 15px 15px;
+  color:#858484;
+}
+ion-input.input-verify{
+    width:100px;
+    padding-right:0px; 
+}
+#btnVerify{
+  color: #ffffff;
+  background-color: #fb6d07;
+  height: 36px;
+  border-radius: 10px;
+}
+.span-needed{
+  color: red;
+}

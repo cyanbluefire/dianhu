@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      乐园
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/icon/lake.jpg" id="park_title_img" (click)="goPointsExchangePage()">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="park_col" (click)="goLivePage()">
+        <img src="../../assets/icon/lake.jpg">
+        <p>网红直播</p>
+      </ion-col>
+      <ion-col class="park_col">
+        <img src="../../assets/icon/lake.jpg">
+        <p>1</p>
+      </ion-col>
+      <ion-col class="park_col">
+        <img src="../../assets/icon/lake.jpg">
+        <p>1</p>
+      </ion-col>
+      <ion-col class="park_col">
+        <img src="../../assets/icon/lake.jpg">
+        <p>1</p>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-toolbar>
+    <span start>新闻头条</span>
+    <ion-buttons end>
+      <button ion-button color="" icon-right (click)="goNewsPage()">
+      更多
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="../../assets/icon/lake.jpg" />
+      </ion-thumbnail>
+      <h2>云朵踢馆那英 只因她曾经讽刺刀郎歌太俗</h2>
+      <p>
+        <span>百度视频  </span>
+        <span>12-21</span>
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="../../assets/icon/lake.jpg" />
+      </ion-thumbnail>
+      <h2>云朵踢馆那英 只因她曾经讽刺刀郎歌太俗</h2>
+      <p>
+        <span>百度视频  </span>
+        <span>12-21</span>
+      </p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
