@@ -1,0 +1,36 @@
+page-keyboard {
+    // height: 500px;
+}
+.keyboard-list-item{
+    
+    
+}
+
+.popover-content{
+    
+}
+.keyboard-grid{
+    // height: 500px;
+    padding:0px;
+}
+.keyboard-grid ion-col{
+    text-align: center;
+    // height: 58px;
+    border: 0.25px solid #c9c9c9;
+    padding-top:14px;
+    font-size: 43px;
+    color: #5e616d;
+}
+.keyboard-grid ion-row {
+}
+.call-phonenumber{
+    // height: 50px;
+    border: 0.25px solid #c9c9c9; 
+    padding:10px;
+    text-align: center;
+    
+}
+.call-phonenumber span{
+    font-size: 43px;
+    color:#fb6d07;
+}

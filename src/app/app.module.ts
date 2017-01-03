@@ -20,6 +20,7 @@ import {bootstrap} from 'angular2/platform/browser';
 import {ConnectYZX} from '../providers/connect-yzx';
 import {CallModalPage} from '../pages/call-modal/call-modal';
 import {MePage} from '../pages/me/me';
+import { KeyboardPage } from '../pages/keyboard/keyboard';
 
 
 @NgModule({ 
@@ -38,7 +39,8 @@ import {MePage} from '../pages/me/me';
     MyCardComponent,
     MessagesPage,
     CallModalPage,
-    MePage
+    MePage,
+    KeyboardPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -59,7 +61,8 @@ import {MePage} from '../pages/me/me';
     RegisterPage,
     MessagesPage,
     CallModalPage,
-    MePage
+    MePage,
+    KeyboardPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},HttpGet,ConnectYZX]
 })
