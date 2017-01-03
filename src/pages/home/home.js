@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-export var HomePage = (function () {
+var HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    HomePage = __decorate([
-        Component({
-            selector: 'page-home',
-            templateUrl: 'home.html'
-        }), 
-        __metadata('design:paramtypes', [NavController])
-    ], HomePage);
     return HomePage;
 }());
+HomePage = __decorate([
+    Component({
+        selector: 'page-home',
+        templateUrl: 'home.html'
+    }),
+    __metadata("design:paramtypes", [NavController])
+], HomePage);
+export { HomePage };
 //# sourceMappingURL=home.js.map

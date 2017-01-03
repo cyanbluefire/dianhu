@@ -11,22 +11,28 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { TabsPage } from '../pages/tabs/tabs';
-export var MyApp = (function () {
-    function MyApp(platform) {
+import { ConnectYZX } from '../providers/connect-yzx';
+var MyApp = (function () {
+    function MyApp(platform, connect) {
+        this.connect = connect;
         this.rootPage = TabsPage;
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
             StatusBar.styleDefault();
             Splashscreen.hide();
+            // initAll(); 
+            // connect.getToken();
+            // console.log("ip==" + (<any>window).returnCitySN.cip );
         });
     }
-    MyApp = __decorate([
-        Component({
-            templateUrl: 'app.html'
-        }), 
-        __metadata('design:paramtypes', [Platform])
-    ], MyApp);
     return MyApp;
 }());
+MyApp = __decorate([
+    Component({
+        templateUrl: 'app.html'
+    }),
+    __metadata("design:paramtypes", [Platform, ConnectYZX])
+], MyApp);
+export { MyApp };
 //# sourceMappingURL=app.component.js.map

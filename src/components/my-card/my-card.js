@@ -8,19 +8,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-var FindPage = (function () {
-    function FindPage(navCtrl) {
-        this.navCtrl = navCtrl;
+// import {IONIC_DIRECTIVES} from 'ionic-framework/config/directives';
+// import {List, Item} from 'ionic/ionic';
+var MyCardComponent = (function () {
+    function MyCardComponent() {
+        console.log('Hello MyCard Component');
     }
-    return FindPage;
+    return MyCardComponent;
 }());
-FindPage = __decorate([
+MyCardComponent = __decorate([
     Component({
-        selector: 'page-find',
-        templateUrl: 'find.html'
+        selector: 'my-card',
+        templateUrl: 'my-card.html',
     }),
-    __metadata("design:paramtypes", [NavController])
-], FindPage);
-export { FindPage };
-//# sourceMappingURL=find.js.map
+    __metadata("design:paramtypes", [])
+], MyCardComponent);
+export { MyCardComponent };
+//# sourceMappingURL=my-card.js.map

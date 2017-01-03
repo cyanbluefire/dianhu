@@ -9,24 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { DomSanitizer } from 'angular/platform-browser';
-export var WebPage = (function () {
+import { DomSanitizer } from '@angular/platform-browser';
+var WebPage = (function () {
     function WebPage(navCtrl, navParams, sanitizer) {
         this.navCtrl = navCtrl;
         this.sanitizer = sanitizer;
         this.title = navParams.get('title');
-        // this.srcUrl=navParams.get('url');
         this.srcUrl = this.sanitizer.bypassSecurityTrustResourceUrl(navParams.get('url'));
         console.log('url=' + this.srcUrl);
         console.log('title=' + this.title);
     }
-    WebPage = __decorate([
-        Component({
-            selector: 'page-web',
-            templateUrl: 'web.html'
-        }), 
-        __metadata('design:paramtypes', [NavController, NavParams, Object])
-    ], WebPage);
     return WebPage;
 }());
+WebPage = __decorate([
+    Component({
+        selector: 'page-web',
+        templateUrl: 'web.html'
+    }),
+    __metadata("design:paramtypes", [NavController, NavParams, DomSanitizer])
+], WebPage);
+export { WebPage };
 //# sourceMappingURL=web.js.map

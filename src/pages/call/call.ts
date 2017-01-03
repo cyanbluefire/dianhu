@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-import { NavController } from 'ionic-angular';
+import { NavController,PopoverController } from 'ionic-angular';
+import { KeyboardPage } from '../keyboard/keyboard';
 
 @Component({
   selector: 'page-call',
@@ -13,8 +13,14 @@ export class CallPage {
     callDate: '12-30',
     callTime: '22:00'
   };
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public popoverCtrl: PopoverController ){
 
+  }
+    presentPopover(myEvent) {
+    let popover = this.popoverCtrl.create(KeyboardPage);
+    popover.present({
+      ev: myEvent
+    });
   }
 
 }

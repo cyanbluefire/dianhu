@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-export var ContactPage = (function () {
+var ContactPage = (function () {
     function ContactPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    ContactPage = __decorate([
-        Component({
-            selector: 'page-contact',
-            templateUrl: 'contact.html'
-        }), 
-        __metadata('design:paramtypes', [NavController])
-    ], ContactPage);
     return ContactPage;
 }());
+ContactPage = __decorate([
+    Component({
+        selector: 'page-contact',
+        templateUrl: 'contact.html'
+    }),
+    __metadata("design:paramtypes", [NavController])
+], ContactPage);
+export { ContactPage };
 //# sourceMappingURL=contact.js.map

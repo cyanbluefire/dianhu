@@ -8,19 +8,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-var FindPage = (function () {
-    function FindPage(navCtrl) {
+import { NavController, NavParams } from 'ionic-angular';
+var PointsExchangePage = (function () {
+    function PointsExchangePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
     }
-    return FindPage;
+    return PointsExchangePage;
 }());
-FindPage = __decorate([
+PointsExchangePage = __decorate([
     Component({
-        selector: 'page-find',
-        templateUrl: 'find.html'
+        selector: 'page-points-exchange',
+        templateUrl: 'PointsExchange.html'
     }),
-    __metadata("design:paramtypes", [NavController])
-], FindPage);
-export { FindPage };
-//# sourceMappingURL=find.js.map
+    __metadata("design:paramtypes", [NavController, NavParams])
+], PointsExchangePage);
+export { PointsExchangePage };
+//# sourceMappingURL=PointsExchange.js.map

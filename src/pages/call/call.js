@@ -8,18 +8,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-export var CallPage = (function () {
-    function CallPage(navCtrl) {
+import { NavController, PopoverController } from 'ionic-angular';
+var CallPage = (function () {
+    function CallPage(navCtrl, popoverCtrl) {
         this.navCtrl = navCtrl;
+        this.popoverCtrl = popoverCtrl;
+        this.item = {
+            phoneNumber: 12345678910,
+            displayName: '哈哈',
+            callDate: '12-30',
+            callTime: '22:00'
+        };
     }
-    CallPage = __decorate([
-        Component({
-            selector: 'page-call',
-            templateUrl: 'call.html'
-        }), 
-        __metadata('design:paramtypes', [NavController])
-    ], CallPage);
     return CallPage;
 }());
+CallPage = __decorate([
+    Component({
+        selector: 'page-call',
+        templateUrl: 'call.html'
+    }),
+    __metadata("design:paramtypes", [NavController, PopoverController])
+], CallPage);
+export { CallPage };
 //# sourceMappingURL=call.js.map

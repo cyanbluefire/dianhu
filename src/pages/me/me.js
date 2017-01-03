@@ -8,19 +8,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-var FindPage = (function () {
-    function FindPage(navCtrl) {
+import { NavController, NavParams } from 'ionic-angular';
+/*
+  Generated class for the Me page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var MePage = (function () {
+    function MePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
-    return FindPage;
+    MePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MePage');
+    };
+    return MePage;
 }());
-FindPage = __decorate([
+MePage = __decorate([
     Component({
-        selector: 'page-find',
-        templateUrl: 'find.html'
+        selector: 'page-me',
+        templateUrl: 'me.html'
     }),
-    __metadata("design:paramtypes", [NavController])
-], FindPage);
-export { FindPage };
-//# sourceMappingURL=find.js.map
+    __metadata("design:paramtypes", [NavController, NavParams])
+], MePage);
+export { MePage };
+//# sourceMappingURL=me.js.map

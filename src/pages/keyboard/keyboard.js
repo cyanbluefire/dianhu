@@ -8,19 +8,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-var FindPage = (function () {
-    function FindPage(navCtrl) {
+import { NavController, NavParams } from 'ionic-angular';
+/*
+  Generated class for the Keyboard page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var KeyboardPage = (function () {
+    function KeyboardPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
-    return FindPage;
+    KeyboardPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad KeyboardPage');
+    };
+    return KeyboardPage;
 }());
-FindPage = __decorate([
+KeyboardPage = __decorate([
     Component({
-        selector: 'page-find',
-        templateUrl: 'find.html'
+        selector: 'page-keyboard',
+        templateUrl: 'keyboard.html'
     }),
-    __metadata("design:paramtypes", [NavController])
-], FindPage);
-export { FindPage };
-//# sourceMappingURL=find.js.map
+    __metadata("design:paramtypes", [NavController, NavParams])
+], KeyboardPage);
+export { KeyboardPage };
+//# sourceMappingURL=keyboard.js.map

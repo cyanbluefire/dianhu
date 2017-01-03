@@ -8,19 +8,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-var FindPage = (function () {
-    function FindPage(navCtrl) {
+import { NavController, NavParams } from 'ionic-angular';
+var MessagesPage = (function () {
+    function MessagesPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
-    return FindPage;
+    MessagesPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MessagesPage');
+    };
+    return MessagesPage;
 }());
-FindPage = __decorate([
+MessagesPage = __decorate([
     Component({
-        selector: 'page-find',
-        templateUrl: 'find.html'
+        selector: 'page-messages',
+        templateUrl: 'messages.html'
     }),
-    __metadata("design:paramtypes", [NavController])
-], FindPage);
-export { FindPage };
-//# sourceMappingURL=find.js.map
+    __metadata("design:paramtypes", [NavController, NavParams])
+], MessagesPage);
+export { MessagesPage };
+//# sourceMappingURL=messages.js.map
